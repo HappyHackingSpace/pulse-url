@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pulse-url"
+version = "0.1.0"
+description = "CLI tool to check if URLs are alive"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.1",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+pulse_url = "pulse_url.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pre-commit>=4.0", "ruff>=0.9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
