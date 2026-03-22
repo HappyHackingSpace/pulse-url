@@ -1,4 +1,4 @@
-# pulse_url
+# Pulse URL
 
 CLI tool to check if URLs are alive.
 
