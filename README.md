@@ -73,3 +73,7 @@ docker run --rm -v ./urls.txt:/app/urls.txt pulse_url check --file /app/urls.txt
 # Continuous monitoring
 docker run --rm pulse_url check https://example.com --watch --interval 10s
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=HappyHackingSpace/pulse-url&type=Date)](https://star-history.com/#HappyHackingSpace/pulse-url&Date)
